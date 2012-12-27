@@ -1,0 +1,15 @@
+这两个文件是用来辅助使用 org-mode 做 slide 用的。
+
+在你的 org 头部设置如下信息
+#+BEGIN_SRC shell
+#+STYLE: <link rel="stylesheet" type="text/css" href="https://raw.github.com/wd/org-info-js/master/stylesheet.css" />
+#+INFOJS_OPT: path:https://raw.github.com/wd/org-info-js/master/org-info.js
+#+INFOJS_OPT: toc:t localtoc:t view:info mouse:underline buttons:nil
+#+TITLE: 
+#+AUTHOR: wd
+#+EMAIL: xxxx@abc.com
+#+END_SRC
+
+写好 org 文件之后，使用 =org-export-as-html= 指令来输出 html 文件，然后在浏览器里面打开就可以了。
+
+也可以把上面的 css 和 js 文件下载到本地，指定本地路径。
