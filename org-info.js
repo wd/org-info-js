@@ -137,7 +137,7 @@ eval("this."+eval_key+"="+eval_val+";");}else{if("HELP"==eval_key){eval("this.ST
 }}}},convertLinks:function(){var f=(this.HIDE_TOC?0:1);var e;var a=this.SECS.length-1;
 for(f;f<this.SECS.length;++f){var d=this.SECS[f].div.getElementsByTagName("a");for(e=0;
 e<d.length;++e){var c=d[e].href.replace(this.BASE_URL,"");for(var b=0;b<this.SECS.length;
-++b){if(this.SECS[b].isTargetFor[c]){d[e].href="javascript:org_html_manager.navigateTo("+b+")";
+++b){if(this.SECS[b].isTargetFor[c]){d[e].href="javascript:org_html_manager.navigateTo("+(b+1)+")";
 break;}}}}},showSection:function(c){var d=parseInt(c);var b=this.NODE;if(this.HIDE_TOC&&this.NODE==this.TOC&&!this.FIXED_TOC){OrgNode.hideElement(this.TOC.div);
 if(this.PLAIN_VIEW==this.VIEW){this.ROOT.showAllChildren();for(var a=0;a<this.ROOT.children.length;
 ++a){this.ROOT.children[a].state=OrgNode.STATE_UNFOLDED;this.ROOT.children[a].fold();
